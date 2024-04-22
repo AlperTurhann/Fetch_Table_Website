@@ -5,23 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Fetch Example." />
     <meta name="keywords" content="HTML, CSS, Tailwind CSS, Vite, Fetch" />
-    <title>Fetch Example</title>
-    <link rel="stylesheet" href="/style.css" />
+    <title>Products Table - Fetch Example</title>
+    <link rel="stylesheet" href="styles/style.css" />
   </head>
   <body>
     <section class="relative overflow-x-auto">
       <table id="table-products" class="w-full text-gray-400">
         <thead class="uppercase text-white bg-gray-700">
-          <tr>
-            <th scope="col" class="px-6 py-3 border border-white">Product</th>
-            <th scope="col" class="px-6 py-3 border">Brand</th>
-            <th scope="col" class="px-6 py-3 border">Category</th>
-            <th scope="col" class="px-6 py-3 border">Description</th>
+          <tr role="row">
+            <th scope="col" role="columnheader" class="px-6 py-3 border">
+              Product
+            </th>
+            <th scope="col" role="columnheader" class="px-6 py-3 border">
+              Brand
+            </th>
+            <th scope="col" role="columnheader" class="px-6 py-3 border">
+              Category
+            </th>
+            <th scope="col" role="columnheader" class="px-6 py-3 border">
+              Description
+            </th>
           </tr>
         </thead>
         <tbody class="bg-gray-800 text-left"></tbody>
       </table>
     </section>
-    <script type="module" src="/main.js"></script>
+    <script type="module" src="src/main.js"></script>
   </body>
 </html>
