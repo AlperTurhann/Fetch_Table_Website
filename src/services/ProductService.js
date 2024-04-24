@@ -5,8 +5,6 @@ const Row = {
   Description: 3
 };
 
-const url = 'https://dummyjson.com/products';
-
 async function setProducts(data, table) {
     const products = data.products;
     console.log(products);
